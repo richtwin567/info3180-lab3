@@ -1,3 +1,71 @@
 body {
     padding-top: 5rem;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.required{
+    color: crimson;
+    font-weight: bold;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 2rem 0;
+}
+
+label{
+    font-weight: bold;
+}
+
+input, textarea{
+    border:lightgrey 1px solid;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+    height: 15rem;
+}
+
+input[type=submit]{
+    background-color: #007BFF;
+    padding: 1rem 3rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+hr{
+    width: 100%;
+    
+}
+
+.flashes{
+    padding: 0;
+}
+.flashes li{
+    list-style-type: none;
+    border-radius: 5px;
+    padding: 1rem;
+
+}
+
+.flashes .success{
+    background-color: #B1EA7F;
+    border: 1px solid #43A120;
+}
+
+.flashes .danger{
+    background-color: #DB2C3B;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #B71E39;
+}
